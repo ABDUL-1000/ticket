@@ -470,9 +470,9 @@ export default function BookingFormMultiStepWithAPI() {
                 <Image
                   width={400}
                   height={400}
-                  src="/placeholder.svg?height=400&width=400"
+                  src="zd.jpg"
                   alt="Art Speaks Here Event"
-                  className="object-cover rounded-lg"
+                  className=" rounded-lg"
                 />
               </div>
 
