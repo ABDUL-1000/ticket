@@ -27,9 +27,9 @@ export default function RootLayout({
       >
         
         
-          <main className="">
+          <main className="h-screen">
 
-          {/* container to center the content */}
+        
          
             {children}
           </main>
