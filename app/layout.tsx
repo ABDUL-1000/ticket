@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-
+import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 
 
@@ -24,20 +23,18 @@ export default function RootLayout({
      
  
       <body
-       className="bg-[#0C0C0C]"
+       
       >
-         
         
-          <Navbar />
-          <main className="lg:mx-[140px]">
+        
+          <main className="">
 
           {/* container to center the content */}
          
             {children}
           </main>
         
-        
-  
+ 
       </body>
 
       
