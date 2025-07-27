@@ -1,8 +1,11 @@
+import React from "react"
+
 export interface BookingFormData {
   name: string
   email: string
   phone: string
   ticketType: string
+  btn:React.ReactNode
 }
 
 export interface PaymentDetails {

@@ -11,7 +11,6 @@ export default function EventDetails() {
   const { ref: speakersRef, isVisible: speakersVisible } = useScrollAnimation(0.2)
 
   const highlights = [
-    "Interactive art workshops and creative sessions",
     "Poetry and spoken word performances",
     "Panel discussions on art as social change",
     "Youth advocacy and empowerment talks",
@@ -24,66 +23,52 @@ export default function EventDetails() {
   const agenda = [
     {
       time: "10:00 AM",
-      title: "Registration & Welcome",
+      title: "Games",
       description: "Check-in, networking, and opening remarks",
     },
     {
-      time: "10:30 AM",
-      title: "Opening Keynote: Art as Voice",
+      time: "11:30 AM",
+      title: "Exibition/Games and Tea",
       description: "The power of creative expression in social change",
     },
     {
-      time: "11:30 AM",
-      title: "Poetry & Spoken Word Session",
+      time: "12:30 PM",
+      title: "Storytelling and Prayer",
       description: "Young voices sharing their stories through poetry",
     },
     {
-      time: "12:30 PM",
-      title: "Art Workshop: Visual Storytelling",
+      time: "1:30 PM",
+      title: "Welcome, Opening Remark and Speech",
       description: "Hands-on creative workshop for participants",
     },
     {
-      time: "1:30 PM",
-      title: "Lunch & Networking",
+      time: "2:30 PM",
+      title: "Lunch and Panel",
       description: "Community meal and informal discussions",
     },
     {
-      time: "2:30 PM",
-      title: "Panel: Artists as Advocates",
+      time: "4:30 PM",
+      title: "Speakers/Performance ",
       description: "Discussion on using art for social advocacy",
     },
-    {
-      time: "3:30 PM",
-      title: "Youth Dialogue Circle",
-      description: "Open forum for young changemakers",
-    },
-    {
-      time: "4:30 PM",
-      title: "Art Exhibition & Showcase",
-      description: "Display of participant and featured artwork",
-    },
-    {
-      time: "5:30 PM",
-      title: "Closing Ceremony",
-      description: "Reflections, commitments, and next steps",
-    },
+
   ]
 
   const speakers = [
     {
-      name: "Amina Hassan",
-      title: "Poet & Youth Advocate",
-      description: "Award-winning spoken word artist and community organizer",
+      name: "Aisha Indabawa",
+      title: "Poet & SDG Advocate",
+      description: "The founder of shining voice global link ",
     },
     {
-      name: "Ibrahim Kano",
-      title: "Visual Artist",
-      description: "Contemporary artist focusing on social justice themes",
+      name: "Shining voice team",
+      title: "Creatives",
+      description: "Poets focusing on social issues",
     },
     {
-      name: "Fatima Abdullahi",
-      title: "Arts Educator",
-      description: "Founder of Creative Minds Initiative",
+      name: "Artist and educators",
+      title: "Exhibitors/ speakers ",
+      description: "Like minds from different creative sectors.",
     },
   ]
 
@@ -159,7 +144,7 @@ export default function EventDetails() {
                       </span>
                       <h4 className="font-semibold text-sm sm:text-base text-gray-900">{item.title}</h4>
                     </div>
-                    <p className="text-gray-600 text-xs sm:text-sm ml-0 sm:ml-2">{item.description}</p>
+                    {/* <p className="text-gray-600 text-xs sm:text-sm ml-0 sm:ml-2">{item.description}</p> */}
                   </div>
                 ))}
               </div>

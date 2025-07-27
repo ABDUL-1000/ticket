@@ -63,19 +63,19 @@ export default function HeroSection({ onBookNow }: HeroSectionProps) {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 space-y-3 sm:space-y-4 transform hover:scale-105 hover:bg-white/15 transition-all duration-300">
-              <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
+              <div className="flex  gap-1  justify-start space-y-2 sm:space-y-0 sm:space-x-3">
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-orange-200 flex-shrink-0" />
                 <span className="font-semibold text-sm sm:text-base">Saturday, 23rd August 2025</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
+              <div className="flex gap-1 sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-orange-200 flex-shrink-0" />
                 <span className="font-semibold text-sm sm:text-base">E-Health Africa, 4-6 Independence Road, Kano</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
+              <div className="flex gap-1 sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
                 <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-orange-200 flex-shrink-0" />
                 <span className="font-semibold text-sm sm:text-base">10:00 AM – 6:00 PM</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
+              <div className="flex gap-1 sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
                 <Users className="w-4 h-4 sm:w-5 sm:h-5 text-orange-200 flex-shrink-0" />
                 <span className="font-semibold text-sm sm:text-base">Fee: ₦5,000</span>
               </div>

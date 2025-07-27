@@ -22,6 +22,7 @@ import {
 
 import Image from "next/image";
 import { useTicketPurchase } from "@/lib/use-ticket-api";
+import Link from "next/link";
 
 interface BookingFormData {
   name: string;
@@ -140,9 +141,9 @@ export default function BookingFormMultiStepWithAPI() {
     switch (currentStep) {
       case 1:
         return (
-          <div className="space-y-3">
-            <div className="text-center mb-3">
-              <User className="w-6 h-6 mx-auto text-orange-500" />
+          <div className="space-y-1">
+            <div className="text-center mb-1">
+              <User className="w-3 h-3 mx-auto text-orange-500" />
               <h3 className="text-base font-semibold text-gray-900 mt-1">
                 Personal Information
               </h3>
@@ -208,7 +209,7 @@ export default function BookingFormMultiStepWithAPI() {
 
               <div>
                 <label className="block text-xs font-medium text-gray-700 mb-1">
-                  Account Number
+                  Account Number used in sending
                 </label>
                 <Input
                   type="tel"
@@ -231,18 +232,25 @@ export default function BookingFormMultiStepWithAPI() {
                 )}
               </div>
 
-              <div className="bg-gradient-to-r from-orange-50 to-red-50 p-2 rounded-lg">
-                <h4 className="font-semibold text-xs text-gray-900">
-                  Registration Fee
+              <div className="bg-gradient-to-r from-orange-50 to-red-50 p-2 rounded-lg flex flex-col items-center justify-center">
+                <h4 className="font-bold text-center text-xs text-gray-900">
+                  Registration Details
                 </h4>
-                <div className="flex justify-between items-center mt-1">
-                  <span className="text-xs text-gray-600">
-                    Art Speaks Here Ticket
+               
+                  <span>
+                   Account number: <span className="text-base font-bold text-orange-600"> 0005286073</span>
                   </span>
-                  <span className="font-bold text-base text-orange-600">
+                  <h2>
+                   Bank name: <span  className="text-md font-bold text-black">Taj bank</span>  
+                  </h2>
+                  <span>
+                  Account name: <span  className="text-xs font-bold text-black">Shining voice global link</span> 
+                  </span>
+               
+               
+                   <span className="font-bold text-base text-orange-600">
                     ₦5,000
                   </span>
-                </div>
               </div>
             </div>
           </div>
@@ -436,7 +444,7 @@ export default function BookingFormMultiStepWithAPI() {
     return (
       <section className="py-8 bg-gray-100 min-h-screen flex items-center justify-center">
         <div className="max-w-xs mx-auto px-4 w-full">
-          <div className="bg-white rounded-lg p-4 shadow-sm">
+          <div className="bg-white flex flex-col justify-center rounded-lg p-4 shadow-sm">
             <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto">
               <CheckCircle className="w-5 h-5 text-green-500" />
             </div>
@@ -454,7 +462,11 @@ export default function BookingFormMultiStepWithAPI() {
                 <br />• Save your ticket
                 <br />• Arrive on time
               </p>
+             
             </div>
+            <Link href='/hero'>
+             <Button  variant='ghost' className="mt-2 rounded-lg border-orange-500 border">Done</Button>
+            </Link>
           </div>
         </div>
       </section>
