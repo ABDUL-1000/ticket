@@ -465,7 +465,7 @@ export default function BookingFormMultiStepWithAPI() {
              
             </div>
             <Link href='/hero'>
-             <Button  variant='ghost' className="mt-2 rounded-lg border-orange-500 border">Done</Button>
+             <Button  variant='ghost' className="mt-2 rounded-lg border-orange-500 border w-full">Done</Button>
             </Link>
           </div>
         </div>
